@@ -1,6 +1,6 @@
 ---
 title: Vue的响应式原理
-date: 2023-05-04 13:50:15
+date: 2023-06-04 13:50:15
 tags:
 - Vue
 categories:
@@ -229,6 +229,13 @@ vm.items.splice(newLength)
 
 ## Vue3的响应式原理
 
-为了实现响应性，Vue需要追踪对象属性的读写。目前在JavaScript中有两种劫持property访问的方式：getter/setter和Proxies。
+为了实现响应性，Vue需要追踪对象属性的读写。目前在JavaScript中有两种劫持property访问的方式：getter/setter和Proxy。
 
 出于支持旧版本浏览器的限制，Vue2使用了getter/setter。而Vue3中使用了Proxy来创建响应式对象，仅将getter/setter用于ref。
+
+--- 未完待续。
+
+## 参考资料
+
+1. [Vue3 - 响应式原理](https://cn.vuejs.org/guide/extras/reactivity-in-depth.html) 
+2. [Vue2 - 响应式原理](https://v2.cn.vuejs.org/v2/guide/reactivity.html) 
