@@ -437,7 +437,7 @@ secondaryAsyncCall([5,4,3,2,1])
 // 5,5resolved, 4,4resolved, 3,3resolved, 2,2resolved, 1,1resolved
 ```
 
-### 2. Promise串行继发执行
+#### 2. Promise串行继发执行
 
 这个场景源于工作实际开发中，需要逐个串行向后端发送数目不定的Promise请求。即：第一个Promise请求成功后，才会发送第二个Promise请求；也就是说，继发执行。
 
